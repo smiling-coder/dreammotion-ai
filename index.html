@@ -1,0 +1,40 @@
+<!doctype html><html lang="en" data-theme="dark"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>DreamMotion AI – Your Imagination. Your Story. Your Video.</title>
+<link rel="stylesheet" href="styles.css"></head><body>
+<div class="glow" id="glow"></div>
+<nav><span class="logo">Dream<b>Motion</b> AI</span>
+<div><a href="#features">Features</a><a href="#characters">Characters</a><a href="#faq">FAQ</a>
+<button id="theme" aria-label="Switch theme">🌓</button>
+<button id="authBtn" class="primary">Log in</button></div></nav>
+<header class="hero">
+<div><h1>Turn Your Imagination Into Motion.</h1>
+<p>Create videos, animate characters, generate voices, and tell your story with one creative workspace.</p>
+<form class="prompt" id="promptForm"><input id="promptIn" maxlength="500" aria-label="Describe your video" placeholder="A teddy bear in a blue hoodie learns Python…">
+<button class="primary">Create Your First Video</button></form>
+<a class="btn" href="#features">Explore Features</a></div>
+<div class="stage" id="stage" aria-label="Draggable scene cards. Drag them around.">
+<div class="frame" style="left:4%;top:6%"><div class="pic" style="background:linear-gradient(135deg,#7a4a22,#c08a4f)">🧸</div><b>Bear</b><small>Curious coder · blue hoodie</small></div>
+<div class="frame" style="left:46%;top:26%;animation-delay:-2s"><div class="pic" style="background:linear-gradient(135deg,#d6389b,#ff9ad5)">🎀</div><b>Pillu</b><small>Cheerful teacher · pink hoodie</small></div>
+<div class="frame" style="left:12%;top:58%;animation-delay:-4s"><div class="pic" style="background:linear-gradient(135deg,#2f7bff,#8b5cf6)">🎬</div><b>Scene 1</b><small>Storyboard preview</small></div></div></header>
+<section id="features"><h2>Everything in one studio</h2><div class="grid">
+<div class="card"><h3>Storyboards</h3><p>Turn an idea into scenes with dialogue, camera and captions.</p></div>
+<div class="card"><h3>Character library</h3><p>Save Bear, Pillu and your own characters for every project.</p></div>
+<div class="card"><h3>Voices and subtitles</h3><p>Narration, dialogue lines and SRT/VTT captions.</p></div>
+<div class="card"><h3>Timeline and export</h3><p>Trim, mix and export for Reels, YouTube and square video.</p></div></div></section>
+<section id="characters" class="chars"><h2>Meet your first characters</h2><div class="grid">
+<div class="card"><h3>🧸 Bear</h3><p>A fluffy brown teddy bear in a blue hoodie. Funny, curious, learning programming.</p></div>
+<div class="card"><h3>🎀 Pillu</h3><p>A cute pink character in a pink hoodie. Intelligent, cheerful, explains coding.</p></div></div></section>
+<section id="projects" hidden><h2>Your projects</h2><div class="grid" id="plist"></div></section>
+<section id="faq"><h2>Honest answers</h2><div class="grid">
+<div class="card"><h3>Is AI video included?</h3><p>Only when a provider is connected in the backend. Without one, you can still write storyboards and plan projects.</p></div>
+<div class="card"><h3>Is my data private?</h3><p>Passwords are hashed. Keys stay on the server, never in the browser.</p></div></div></section>
+<footer>© DreamMotion AI · Your Imagination. Your Story. Your Video.</footer>
+<div class="modal" id="modal"><form id="authForm"><h3 id="authTitle">Log in</h3>
+<input id="em" type="email" placeholder="Email" required autocomplete="email">
+<input id="pw" type="password" placeholder="Password (8+ characters)" minlength="8" required autocomplete="current-password">
+<button class="primary">Continue</button>
+<button type="button" id="swap">New here? Create an account</button>
+<button type="button" id="close">Cancel</button></form></div>
+<div class="toast" id="toast" role="status"></div>
+<script src="app.js"></script></body></html>
